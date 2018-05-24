@@ -1,0 +1,58 @@
+//JSON criado no ObjGen = url{http://www.objgen.com/json/models/ABmID}
+//Observacao:
+//dim: especifica a dimensao da placa em linhas x colunas
+//t: total de pecas usadas
+//tiles: indica quais pecas devem ser escolhidas da fonte do bloco e quantas delas
+//list: eh a lista de pecas unicas a serem extraidas da fonte
+//"multi: eh o multiplicador de lista para obter o tamanho do tabuleiro, pode ser obsoleto
+//"logfile: caminho do log do arquivo"
+
+//Informacoes sobre o arquivo
+app-title = Shisen Sho -version %v%- By @ViniciusArdonyx
+version = 0.1
+tiles-file = tiles.png
+logfile = false
+initial-dim = [14,6]
+delay-deleting = 0.5
+
+//Matrix de tiles
+tiles-matrix[0]
+tiles-matrix[1] = circle-1,circle-2,circle-3,circle-4,circle-5,circle-6,circle-7,circle-8,circle-9
+tiles-matrix[2] = character-1,character-2,character-3,character-4,character-5,character-6,character-7,character-8,character-9
+tiles-matrix[3] = bamboo-1,bamboo-2,bamboo-3,bamboo-4,bamboo-5,bamboo-6,bamboo-7,bamboo-8,bamboo-9
+tiles-matrix[4] = wind-north,wind-south,dragon-red,joker,blank1,season-spring,season-summer,flower-plum,flower-orchid
+tiles-matrix[5] = wind-west,wind-east,dragon-green,dragon-white,blank2,season-autumn,season-winter,flower-bamboo,flower-chrysanthemum
+
+//Tabuliero
+tiles[0]
+  dim = [3,4]
+  t = 3
+  list[] = circle-9,bamboo-5,joker
+tiles[1]
+  dim = [4,2]
+  t = 4
+  list[] = flower-plum,flower-orchid,flower-bamboo,flower-chrysanthemum
+tiles[2]
+  dim = [4,5]
+  t = 5
+  list[] = dragon-red,wind-north,wind-south,character-3,bamboo-2
+tiles[3]
+  dim = [5,8]
+  t = 10
+  list[] = circle-1,circle-2,circle-3,circle-4,dragon-red,joker,dragon-green,dragon-white,character-7,character-8
+tiles[4]
+  dim = [5,12]
+  t = 15
+  list[] = circle-1,circle-2,circle-3,circle-4,circle-5,character-1,character-2,character-3,character-4,character-5,bamboo-1,bamboo-2,bamboo-3,bamboo-4,bamboo-5
+tiles[5]
+  dim = [6,6]
+  t = 9
+  list[] = season-spring,season-summer,season-autumn,season-winter,flower-plum,flower-orchid,flower-bamboo,flower-chrysanthemum,joker
+tiles[6]
+  dim = [10,4]
+  t = 10
+  list[] = bamboo-1,bamboo-2,bamboo-3,bamboo-4,character-1,character-2,character-3,character-4,season-spring,season-summer
+tiles[7]
+  dim = [14,6]
+  t = 21
+  list[] = circle-1,circle-2,circle-3,circle-4,circle-5,circle-6,circle-7,circle-8,circle-9,character-1,character-2,character-3,character-4,character-5,character-6,character-7,character-8,character-9,dragon-red,dragon-green,dragon-white
